@@ -1,2 +1,15 @@
 api:
   version: "0.0.1-dev"
+typeorm: 
+  type: "postgres" 
+  host: "localhost"
+  port: 5432
+  username: 'postgres'
+  password: 'secret'
+  database: 'stc-default'
+  synchronize: true
+  logging: false
+  entities: 
+    # Add your entities
+    # This is a string array, use class name as value
+    - 'Series'
