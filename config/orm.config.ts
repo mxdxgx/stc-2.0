@@ -1,5 +1,6 @@
 import { PostgresConnectionOptions } from 'typeorm/driver/postgres/PostgresConnectionOptions';
 import { configs } from './configs';
+import { Serie } from '../src/entities/serie';
 
 const typeOrmConfig: PostgresConnectionOptions = {
     type: configs.typeOrm.type,
@@ -10,7 +11,9 @@ const typeOrmConfig: PostgresConnectionOptions = {
     database: configs.typeOrm.database,
     synchronize: configs.typeOrm.synchronize,
     logging: configs.typeOrm.logging,
-    entities: configs.typeOrm.entities
+    entities: [
+        Serie
+    ]
 };
 
 export { typeOrmConfig };

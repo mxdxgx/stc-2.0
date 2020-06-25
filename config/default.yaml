@@ -11,7 +11,3 @@ typeorm:
   database:
   synchronize: true
   logging: false
-  entities:
-    # Add your entities
-    # This is a string array, use class name as value
-    - "Series"

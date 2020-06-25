@@ -10,8 +10,4 @@ typeorm:
   password: "secret"
   database: "stc-local-test-00"
   synchronize: true
-  logging: false
-  entities:
-    # Add your entities
-    # This is a string array, use class name as value
-    - "Series"
+  logging: true
