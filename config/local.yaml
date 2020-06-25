@@ -1,15 +1,17 @@
 api:
-  version: "0.0.1-local"
-typeorm: 
-  type: "postgres" 
+  version: "v2"
+  domainPath: "/stc"
+
+typeorm:
+  type: "postgres"
   host: "localhost"
   port: 5432
-  username: 'postgres'
-  password: 'secret'
-  database: 'stc-default'
+  username: "postgres"
+  password: "secret"
+  database: "stc-local-test-00"
   synchronize: true
   logging: false
-  entities: 
+  entities:
     # Add your entities
     # This is a string array, use class name as value
-    - 'Series'
+    - "Series"

@@ -4,7 +4,7 @@ import { exampleMiddleware } from "../middlewares/example.middleware";
 
 export const RESOURCES_ROUTES = [
   new ReadResourceRoute({
-    route: "/alphabet",
+    route: "/v2/info",
     middlewares: [exampleMiddleware],
     handler: baseController.getAll,
   }),

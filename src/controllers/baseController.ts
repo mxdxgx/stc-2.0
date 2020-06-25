@@ -8,7 +8,7 @@ export class BaseController {
     next: express.NextFunction
   ): Promise<void> {
     req.log.info(`${new Date()}`);
-    res.status(200).send({ a: "hello", api: configs.api });
+    res.status(200).send({ api: configs.api });
   }
 }
 
