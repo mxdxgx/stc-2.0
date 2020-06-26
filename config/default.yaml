@@ -9,5 +9,3 @@ typeorm:
   username:
   password:
   database:
-  synchronize: true
-  logging: false

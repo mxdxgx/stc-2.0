@@ -7,11 +7,12 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "run with existing data",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/src/server/server.ts",
       "preLaunchTask": "compile",
-      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "args": ["--preserve-data"]
     },
     {
       "name": "mocha tests",

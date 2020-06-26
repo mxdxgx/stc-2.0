@@ -6,9 +6,8 @@
     "port": 5432,
     "username": "postgres",
     "password": "secret",
-    "database": "startrek_t",
+    "database": "stc-local-test-03",
     "schema": "public",
-    "synchronize": false,
     "entities": ["entities/*.js"]
   }
 ]
