@@ -1,0 +1,11 @@
+api:
+  version: "v2"
+  domainPath: "/stc"
+
+typeorm:
+  type: "postgres"
+  host: "localhost"
+  port: 5432
+  username: "postgres"
+  password: "secret"
+  database: "stc-local-test-03"

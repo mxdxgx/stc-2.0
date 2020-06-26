@@ -8,4 +8,4 @@ typeorm:
   port: 5432
   username: "postgres"
   password: "secret"
-  database: "stc-local-test-03"
+  database: "stc-local-00"
