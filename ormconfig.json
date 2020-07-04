@@ -1,13 +1,15 @@
 [
-  {
-    "name": "default",
-    "type": "postgres",
-    "host": "localhost",
-    "port": 5432,
-    "username": "postgres",
-    "password": "secret",
-    "database": "stc-local-test-03",
-    "schema": "public",
-    "entities": ["entities/*.js"]
-  }
+    {
+        "name": "default",
+        "type": "postgres",
+        "host": "localhost",
+        "port": 5432,
+        "username": "postgres",
+        "password": "secret",
+        "database": "stc-local-00",
+        "schema": "public",
+        "entities": [
+            "entities/*.js"
+        ]
+    }
 ]

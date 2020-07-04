@@ -1,6 +1,7 @@
 import * as express from "express";
 import { getManager } from "typeorm";
 import { configs } from "../../config/configs";
+import { Serie } from "../entities/Serie";
 
 export class BaseController {
     public async getAll(
@@ -9,7 +10,6 @@ export class BaseController {
         next: express.NextFunction
     ): Promise<void> {
         req.log.info(`${new Date()}`);
-
         const series = await getManager().getRepository('Serie').find();
         res.status(200).send({ api: configs.api, serie: series });
     }
