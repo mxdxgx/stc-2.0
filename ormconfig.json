@@ -2,11 +2,11 @@
   {
     "name": "default",
     "type": "postgres",
-    "host": "localhost",
+    "host": "cassonade.org",
     "port": 5432,
     "username": "postgres",
     "password": "secret",
-    "database": "stc-local-test-03",
+    "database": "postgres",
     "schema": "public",
     "entities": ["entities/*.js"]
   }

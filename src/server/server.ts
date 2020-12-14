@@ -3,8 +3,10 @@ import * as express from "express";
 import * as pinoExpress from "express-pino-logger";
 import * as pino from "pino";
 import "reflect-metadata";
-import { createConnection } from "typeorm";
+import { createConnection, getManager } from "typeorm";
 import { typeOrmConfig } from "../../config/orm.config";
+import { MOVIES } from "../data/movies";
+import { RACES } from "../data/races";
 import { RoutesBuilder } from "../router/routes";
 import { constants } from "../utils/constants";
 
@@ -34,6 +36,10 @@ createConnection(typeOrmConfig)
         `server started at http://localhost:${port}\nwith db connection ${connection.name}`
       );
     });
+
+    for (const serie of MOVIES) {
+      await getManager().getRepository("Movie").insert(serie);
+    }
   })
   .catch((connectionError) => {
     logger.error(

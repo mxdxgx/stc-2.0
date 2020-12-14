@@ -17,9 +17,6 @@ export class Movie {
   @Column("character varying", { name: "title", nullable: true, length: 100 })
   title: string | null;
 
-  @Column("integer", { name: "episode_number", nullable: true })
-  episodeNumber: number | null;
-
   @Column("character varying", { name: "airdate", nullable: true, length: 100 })
   airdate: string | null;
 

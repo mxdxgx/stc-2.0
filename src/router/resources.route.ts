@@ -1,11 +1,11 @@
 import { baseController } from "../controllers/baseController";
 import { ReadResourceRoute } from "../core/router/router.resourcesTypes";
-import { exampleMiddleware } from "../middlewares/example.middleware";
+import { entityIdentityMiddleware } from "../middlewares/entity.middleware";
 
 export const RESOURCES_ROUTES = [
   new ReadResourceRoute({
-    route: "/v2/info",
-    middlewares: [exampleMiddleware],
-    handler: baseController.getAll,
+    route: "/v2/:entityId",
+    middlewares: [entityIdentityMiddleware],
+    handler: baseController.getEntity,
   }),
 ];

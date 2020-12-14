@@ -4,8 +4,8 @@ api:
 
 typeorm:
   type: "postgres"
-  host: "localhost"
+  host: "cassonade.org"
   port: 5432
   username: "postgres"
   password: "secret"
-  database: "stc-local-00"
+  database: "postgres"
