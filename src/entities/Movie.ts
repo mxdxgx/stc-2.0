@@ -29,8 +29,4 @@ export class Movie {
 
   @Column("json", { name: "text", nullable: true })
   text: object | null;
-
-  @ManyToOne(() => Serie, (serie) => serie.movies)
-  @JoinColumn([{ name: "serie_id", referencedColumnName: "id" }])
-  serie: Serie;
 }

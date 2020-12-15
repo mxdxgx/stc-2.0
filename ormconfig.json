@@ -4,10 +4,16 @@
     "type": "postgres",
     "host": "cassonade.org",
     "port": 5432,
+    "synchronize": true,
     "username": "postgres",
     "password": "secret",
     "database": "postgres",
     "schema": "public",
+    "migrations": ["./src/migrations/**/*.ts"],
+    "cli": {
+      "entitiesDir": "src/entities",
+      "migrationsDir": "src/migrations"
+    },
     "entities": ["entities/*.js"]
   }
 ]

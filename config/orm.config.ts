@@ -30,7 +30,7 @@ const typeOrmConfig: PostgresConnectionOptions = {
   username: configs.typeOrm.username,
   password: configs.typeOrm.password,
   database: configs.typeOrm.database,
-  synchronize: constants.SYNC_DB,
+  synchronize: true, //constants.SYNC_DB,
   logging: constants.IS_DEVELOPMENT,
   entities: [
     Character,
